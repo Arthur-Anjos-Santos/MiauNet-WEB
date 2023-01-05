@@ -1,0 +1,72 @@
+
+:root{
+    --text-color: #fdfdfd;
+}
+
+html{
+    height: 100%;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #4b4b4b;
+    color: var(--text-color);
+    height: 100%;
+    margin: 8px 60px 8px 60px;
+}
+
+h2{
+    font-size: 32pt;
+    text-shadow: black 3px -3px;
+    text-decoration: underline;
+}
+
+h3{
+    font-size: 26pt;
+    padding: 0;
+}
+
+p{
+    font-size: 20pt;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+
+header {
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+header h3{
+    margin-left: 0px;
+    margin-right: 50px;
+}
+
+header a h3::after{
+    content:"";
+    position: relative;
+    top: 5px;
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    height: 5px;
+    background: currentColor;
+}
+
+header a h3:hover{
+    color: var(--text-color1);
+    transition: 200ms;
+}
+
+#logo{
+    width: 341px;
+    height: 105px;
+}

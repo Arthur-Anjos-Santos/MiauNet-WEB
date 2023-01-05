@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MiauNet</title>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles MiauNet/all.css">
+        <link rel="stylesheet" href="styles MiauNet/pesquisa.css">
+        <link rel="shortcut icon" href="images MiauNet/LogoMiauNet-Preto.png" type="image/x-icon">
+
+        <script src="codes/pesquisa.js"></script>
+
+    </head>  
+    <body>
+        <div  id= "home"> 
+            <header>
+                <a href="index.html">
+                    <img id= "logo" src="images MiauNet/LogoMiauNet-Branco-Texto.png" alt="Logomarca">
+                </a>
+                <a href="cadastro.html">
+                    <img class="icones" src="images MiauNet/IconePesquisa.png" alt="Pesquisar">
+                    <h3>Cadastrar uma obra</h3>
+                </a>
+            </header>
+            <main>
+                <div id="content-left">
+                    <form action= "">
+                        <fieldset>
+                            <legend>
+                                <h2>Pesquisar uma obra cadastrada.</h2>
+                            </legend>
+                            <div class="field">
+                                <label for="titulo">Título:</label>
+                                <input type="text" name="titulo" id="titulo" autocomplete="off" spellcheck="false" placeholder="Digite o título da obra">
+                            </div>
+                            <div class="field-group">
+                                <div class="field">
+                                    <label for="tipo">Tipo:</label>
+                                    <select name= "tipo" id="tipo">
+                                        <option value="">Selecione o tipo da obra</option>
+                                        <option value="Filme">Filme</option>
+                                        <option value="Seriado">Seriado</option>
+                                    </select>
+                                </div>
+                                <div class="field">
+                                    <label for="categoria">Categoria:</label>
+                                    <select id="categoria" name= "categoria">
+                                        <option value="">Selecione a categoria da obra</option>
+                                        <option value="Ação">Ação</option>
+                                        <option value="Animação">Animação</option>
+                                        <option value="Aventura">Aventura</option>
+                                        <option value="Comédia">Comédia</option>
+                                        <option value="Crime">Crime</option>
+                                        <option value="Documentário">Documentário</option>
+                                        <option value="Drama">Drama</option>
+                                        <option value="Família">Família</option>
+                                        <option value="Ficção Científica">Ficção Científica</option>
+                                        <option value="Guerra">Guerra</option>
+                                        <option value="Mistério">Mistério</option>
+                                        <option value="Música">Música</option>
+                                        <option value="Romance">Romance</option>
+                                        <option value="Suspense">Suspense</option>
+                                        <option value="Terror">Terror</option>
+                                    </select>
+                                </div>
+                            </div>   
+                        </fieldset>    
+                        <button onclick="pesquisarObra();">
+                            <h3>Pesquisar</h3>
+                        </button> 
+                    </form>
+                        <a href="index.html">
+                            <img class="icones" src="images MiauNet/IconeEntrada.png"  alt="Pesquisar">
+                            <h3>Voltar para home</h3>
+                        </a>
+                </div>
+                <div id="content-right">
+                    <p>Aqui vai ficar o upload da foto de cartaz</p>
+                </div> 
+            </main>
+            <footer>
+            </footer>
+        </div>
+    </body>
+</html>
+
+
+<!--<fieldset>
+    <legend>
+        <h2>Pesquisar uma obra cadastrada.</h2>
+    </legend>
+    <div id="barra-pesquisa">
+        <input id="nome-obra" type="search" autocomplete="off" spellcheck="false" aria-live="polite" placeholder="Digite o nome da obra">
+        <ntp-realbox-icon 
+            id="icone-pesquisa" barra-pesquisa="" background-image="" mask-image="search.svg">
+        </ntp-realbox-icon>
+    </div>
+</fieldset>-->

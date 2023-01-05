@@ -1,0 +1,64 @@
+
+#home main a{
+    background-color: rgb(0, 128, 255); /*#049DD9;*/
+    border-radius: 25px;
+    border: none;
+    width: 440px;
+    height: 70px;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#home main a:hover {
+    background-color: rgb(0, 191, 255);
+
+}
+
+#home main {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#content-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 60vh;
+    margin-right: 50px;
+}
+
+#content-left h2{
+    margin-top: 0px;
+}
+
+#content-left p{
+    height: 40%;
+}
+
+#content-left a{
+    margin-bottom: 4%;
+}
+
+#catalogo{
+    max-width: 700px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 36%;
+}
+
+#home .icones {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+}
+
+.icones:hover{
+    transition: 0.5s all;
+    transform: scale(1.3)rotate(26deg); /*Comando para fazer os icones rotacionarem*/
+    padding-right: 6px; 
+}
